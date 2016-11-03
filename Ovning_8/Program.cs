@@ -49,7 +49,7 @@ namespace Ovning_8
                 sum = +temp[i];
             }
 
-            Console.WriteLine($"Medeltemperaturen är {sum / temp.Length}");
+            Console.WriteLine($"Medeltemperaturen är {sum / temp.Length}"); //Testkommentar
 
             Console.ReadKey();
         }
