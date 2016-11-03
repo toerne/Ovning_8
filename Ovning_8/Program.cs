@@ -31,7 +31,7 @@ namespace Ovning_8
 
             personVektor[index] = newName;
 
-            Console.WriteLine("Hur många väderstationsmätningar har du gjort?" );
+            Console.WriteLine("Hur många väderstationsmätningar har du gjort?");
             index = Convert.ToInt32(Console.ReadLine());
 
             int[] temp = new int[index];
@@ -42,14 +42,14 @@ namespace Ovning_8
                 temp[i] = Convert.ToInt32(Console.ReadLine());
             }
 
-            int sum = 0;
+            float sum = 0;
 
             for (int i = 0; i < temp.Length; i++)
             {
-                sum = +temp[i];
+                sum += temp[i]; //Var logiskt fel här.
             }
 
-            Console.WriteLine($"Medeltemperaturen är {sum / temp.Length}"); //Testkommentar
+            Console.WriteLine($"Medeltemperaturen är {sum / (temp.Length)}"); //Nu blir det korrekt medeltemperatur
 
             Console.ReadKey();
         }
