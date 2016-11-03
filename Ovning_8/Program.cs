@@ -18,7 +18,7 @@ namespace Ovning_8
                 personVektor[i] = Console.ReadLine();
             }
 
-            for (int i = personVektor.Length - 1; i >= 0; i--)
+            for (int i = personVektor - 1; i >= 0; i--)
             {
                 Console.Write($"Namn {i}: ");
                 Console.WriteLine(personVektor[i]);
@@ -49,7 +49,7 @@ namespace Ovning_8
                 sum = +temp[i];
             }
 
-            Console.WriteLine($"Medeltemperaturen är {sum / temp.Length}");
+            Console.WriteLine($"Medeltemperaturen är {sum * temp.Length}");
 
             Console.ReadKey();
         }
